@@ -1,0 +1,29 @@
+h1 {
+  font-family: Helvetica;
+}
+
+.post {
+  width: 380px;
+  height: 140px;
+  background:
+    linear-gradient(90deg, transparent, rgba(51,51,51,0.05), transparent) -100% 0/140px 200% no-repeat,
+
+    linear-gradient(90deg, #f2f2f2, #f2f2f2) 20px 20px/100px 100px no-repeat,
+    linear-gradient(90deg, #f2f2f2, #f2f2f2) 140px 35px/55% 15px no-repeat,
+    linear-gradient(90deg, #f2f2f2, #f2f2f2) 140px 60px/40% 15px no-repeat,
+    linear-gradient(90deg, #f2f2f2, #f2f2f2) 140px 75%/50px 8px no-repeat;
+
+  animation: shine 1.2s ease-in-out infinite;
+}
+
+@keyframes shine {
+  100%{
+    background-position:
+      150% 0,
+      20px 20px,
+      140px 35px,
+      140px 60px,
+      140px 75%;
+  }
+
+}
